@@ -1,0 +1,18 @@
+{
+  "server.py": {
+    "baseline_sha256": "36a6ac4ce3a983b7964ced2841554349ad1d8afda7eba46fec6a522057ff09f6",
+    "installed_sha256": "eda4f4ad26f17369502d200b68ccace7ba0d848467ac0190131f60e643f455c7"
+  },
+  "sdk.py": {
+    "baseline_sha256": "c19e56829e71b72007491a62027f96d39b74c3b8ea8cdf7c92a5b9dace45b0fc",
+    "installed_sha256": "a5f7c05174e1094284c1fc27853e7ec9c561391fb52bbc83c7765438ac6e0d73"
+  },
+  "atlas.py": {
+    "baseline_sha256": "54ca1b6bbc01556a4d17fbf225622571e3422e26700b384e8e1c59374244f613",
+    "installed_sha256": "6e58ccbcc1425cf87554646ae3a8f5c204e5614551164917570486faf43c9aea"
+  },
+  "README.md": {
+    "baseline_sha256": "cb972434d81a3d72886951b7fbec9fe2b6c9e190d21da2a477b0da4c5416ec32",
+    "installed_sha256": "44cb85bda3b3c8196f14ae5a6eb15c1c890a685f27ad8533c658efbb20120ee2"
+  }
+}

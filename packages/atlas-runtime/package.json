@@ -1,0 +1,13 @@
+{
+	"name": "@frog1205/atlas-runtime",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"description": "Controlled single-project Atlas Brain Worker",
+	"dependencies": {
+		"@earendil-works/chord": "1.4.0",
+		"@earendil-works/pi-ai": "1.4.0",
+		"@earendil-works/pi-durable": "1.4.0"
+	},
+	"engines": { "node": ">=24.14.0" }
+}

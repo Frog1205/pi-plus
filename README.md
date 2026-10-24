@@ -14,6 +14,8 @@
 
 Pi is a minimal, extensible agent harness that you can make your own.
 
+This fork includes the [Atlas Brain controlled runtime](docs/atlas/README.md): a Windows single-project integration with explicit tool permissions, transactional operation receipts, and process recovery. The P1 workflow is offline and does not use a real model.
+
 Adapt Pi to your workflows, not the other way around. Customize Pi with [extensions](packages/coding-agent/docs/extensions.md), [skills](packages/coding-agent/docs/skills.md), [prompt templates](packages/coding-agent/docs/prompt-templates.md), and [themes](packages/coding-agent/docs/themes.md). Bundle them as [Pi packages](packages/coding-agent/docs/packages.md) and share via npm or git.
 
 Pi ships with powerful defaults but skips features like sub-agents and plan mode. Ask Pi to build what you want, or install a package that does it your way.

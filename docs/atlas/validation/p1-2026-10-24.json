@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-24T16:56:29.864424+00:00",
+  "environment": {
+    "os": "Windows",
+    "node": "24.14.0",
+    "python": "3.13.12"
+  },
+  "mode": "controlled_offline",
+  "model_connected": false,
+  "engine_version": "1.4.0",
+  "engine_base_revision": "f321e5bdd26b3624bfb2ab182a334d0a5edb698a",
+  "engine_git_blob_hashes_verified": 346,
+  "p1": {
+    "passed": 20,
+    "failed": 0,
+    "groups": {
+      "test_p1.py": 14,
+      "test_isolation.py": 4,
+      "test_http.py": 2
+    }
+  },
+  "p0_and_upstream_regression": {
+    "passed": 109,
+    "failed": 0,
+    "groups": {
+      "coding": 23,
+      "durable": 59,
+      "coding-p0": 17,
+      "durable-p0": 10
+    },
+    "expected_counterexamples_included": true
+  },
+  "root_check": {
+    "command": "npm run check",
+    "exit_code": 0
+  },
+  "clean_source_export": {
+    "git_index": true,
+    "parent_atlas_present": false,
+    "old_artifacts_present": false,
+    "dependencies": "fresh npm ci --ignore-scripts --no-audit --no-fund; 301 packages",
+    "model_metadata": "same verified pinned catalog hydration",
+    "p1_passed": 20
+  },
+  "limitations": [
+    "local Windows verification, not CI or a security certification",
+    "no real model inference",
+    "network isolation and arbitrary external effects not verified",
+    "existing npm config and transitive dependency deprecation warnings remain; no dependency upgrade"
+  ],
+  "source_sha256": {
+    ".gitignore": "ed3740547d07af3e2bc3d75c0a187570908e263ae232acbe83ca019e6aa0acbb",
+    "integrations/accept_atlas.py": "374b694c8100827a28184342edae664d67c75fb42b40b47dc4b85dac59285ed7",
+    "integrations/atlas_bridge/__init__.py": "619510b985910533b5265e758b0dc08d04c145104b639e1267cd19d5b0e2a4f6",
+    "integrations/atlas_bridge/host.py": "4c41b083a19cc0098e98a97c2cc188f6b8f295fd72cdf6f858fa46e4d8be14b0",
+    "integrations/atlas_bridge/http_api.py": "ab5281b34f0b56298026ba22e24f2d5d26a943426aa9a133827893bd1058dd8a",
+    "integrations/atlas_bridge/windows.py": "6571748f6ed4fdeb676c4ff5571ed3d2156c3f2799def7ea6991aaa27dc4f8f9",
+    "integrations/configure_atlas.py": "011242e7beb6cc255261fd26a243a0d9e307b4653f396e296f3dbb732f1d9f9f",
+    "integrations/install_workbench.py": "5a474be4935aa8534eb6be9d45ee9765ab37002ea4a22e9410e96f6704cd3543",
+    "integrations/lock_engine.py": "69ebea45adbcbeb376862d79b99a5023ab2528a1176465ee173e52a8fca055a9",
+    "integrations/run_p1_checks.py": "f29cb9b21931da93d4b0955b6bfbebd64e736663da4bdcabe6cad6eaa2c97aa3",
+    "integrations/tests/host_crash.py": "e5df6066e229c470853b928d74453e27d9bfbf8cd704a6ca1c1610f2185ed1eb",
+    "integrations/tests/isolation_probe.mjs": "71dc2d5b6787cb28c426f8a1a5d91795fd9b6c90689fd0698e8b13b1878fc6b6",
+    "integrations/tests/job_parent.py": "83a4235ded83de2f69e072dc15f8b436f59b42c3dc5dbea5fc0a5a89d36a3920",
+    "integrations/tests/test_http.py": "dcb0e467c4e114846eb46b3ddca21face9ecc7835e1f7570090eb8e2fefa67b0",
+    "integrations/tests/test_isolation.py": "750b65711a2ba781706e202361498d63e8bd012137de64614c7b138b79181d7b",
+    "integrations/tests/test_p1.py": "68f8014e6409314f098ecc24f692c77b59e1dac435093e0d53739d78a34dab46",
+    "integrations/workbench/atlas.py": "6e58ccbcc1425cf87554646ae3a8f5c204e5614551164917570486faf43c9aea",
+    "integrations/workbench/manifest.json": "e7f82bcbc8ede72d7a331eab1ec2ec0fb79bfff94c8c3f24e7d527759eed9497",
+    "integrations/workbench/sdk.py": "a5f7c05174e1094284c1fc27853e7ec9c561391fb52bbc83c7765438ac6e0d73",
+    "integrations/workbench/server.py": "eda4f4ad26f17369502d200b68ccace7ba0d848467ac0190131f60e643f455c7",
+    "package-lock.json": "0ab417a6d18994797e44fc2e5a55407bb312f98edf4d42f9e590d16060b40f94",
+    "packages/atlas-runtime/engine-lock.json": "6d7585c88a76fb8fe4699d175f432023bc32bd8144c33b5f0ba60eb0713a6a54",
+    "packages/atlas-runtime/package.json": "da695c5aaad2370de883c95fccfebe72568470511339e874aec9de245e46d365",
+    "packages/atlas-runtime/src/worker.ts": "87c03d52f9fc54e2b62ad7647334c007c80eadb0327fdc5e11d1e0ca98bffd8f",
+    "packages/coding-agent/test/atlas-p0-sdk-process.test.ts": "22d61ec504d3ad0f532a3fa6290d651a4ff6858948421be14c3ab2703f179d86",
+    "packages/coding-agent/test/suite/atlas-p0-boundaries.test.ts": "4bdb6d4374aeea7c4f43807d0bd89faf36d05ec2f49aa76837e52821cca6e89b",
+    "packages/durable/test/atlas-p0-process-recovery.test.ts": "0edcf2e7ae5f271f5b37d9dee0e960199082c9fabbe841a58cc519b0e6d36699",
+    "packages/durable/test/atlas-p0-process-support.ts": "440dc2b5f98bba6e2ff52e929e289bbf4507eb29477fbe4bdff820393c48b02f",
+    "packages/durable/test/fixtures/atlas-p0-delayed-effect.ts": "b9446310965b3127306df9cc4a2a8a1dff4b906b55fddc6ac76c6bbaf2ef876c",
+    "packages/durable/test/fixtures/atlas-p0-worker.ts": "31e6ae8a285e12d46417e78932d312a3f5851ea288f350c11c237adab839ffe6",
+    "scripts/atlas-p0-durable.config.ts": "3bb98914fd8d4bf68ba62370668cb8a1ec0d59fc28755cb47fe1241e3d77c718",
+    "scripts/atlas-p0-run.mjs": "a0a67137389cf30d4f108bc97aaf45915ae4ee112db0cd4bdce6d0968aff240f",
+    "scripts/check-entry-graphs.mjs": "61639581744b5e1b3d102d871c55cedbc71482a5d8de18a7f95633c52a1d636c"
+  }
+}
