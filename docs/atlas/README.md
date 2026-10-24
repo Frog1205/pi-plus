@@ -8,7 +8,8 @@
 - [P0 权限、恢复与重复执行实测](p0-foundation-validation-2026-10-24.md)。
 - [P1 实现、验收与启动](p1-controlled-runtime-2026-10-24.md)。
 - [P1 仓库交付验收摘要](validation/p1-2026-10-24.json)。
-- [P2 真实模型接入规划与验收标准](p2-real-model-plan.md)：保持 P1 权限边界，当前仅规划。
+- [P2 真实模型接入规划与验收标准](p2-real-model-plan.md)：保持 P1 权限边界；P2.0 已独立验证，后续生产接入仍待实施。
+- [P2.0 假供应商协议与故障验证](p2-0-protocol-validation-2026-10-24.md)：独立 model_fixture 入口，无真实推理；不改变 P1 正式入口。
 
 ## 独立运行 P1 测试
 

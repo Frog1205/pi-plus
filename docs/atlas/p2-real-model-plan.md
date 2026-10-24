@@ -1,6 +1,6 @@
 # P2：在现有权限边界内接入真实模型
 
-日期：2026-10-24（America/Los_Angeles）。状态：**规划，尚未实现或执行真实模型调用**。
+日期：2026-10-24（America/Los_Angeles）。状态：**P2.0 已完成假供应商协议验证；正式治理层和真实模型调用尚未验收**。阶段记录见 [P2.0 验证报告](p2-0-protocol-validation-2026-10-24.md)，以下保留完整 P2 的实施与验收要求。
 
 已发布基线：P1 提交 [`eed2d2ccc8bfcceb867dddb21cc3bf1cd4bdc754`](https://github.com/Frog1205/pi-plus/commit/eed2d2ccc8bfcceb867dddb21cc3bf1cd4bdc754)。P1 20 项测试、P0/上游 109 项回归和根检查通过；独立源码快照重新安装依赖后 P1 20 项再次通过。计数、环境及源文件摘要见 [交付验收记录](validation/p1-2026-10-24.json)。
 

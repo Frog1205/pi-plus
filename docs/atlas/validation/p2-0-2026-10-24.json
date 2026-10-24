@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-24T22:53:25.274723+00:00",
+  "base_commit": "9e67d1a3f46f7244b019c9ac90086fab9968d36c",
+  "stage": "P2.0 fixture-only protocol probe",
+  "mode": "model_fixture",
+  "model_connected": false,
+  "real_provider_requests": 0,
+  "p2": {
+    "passed": 15,
+    "failed": 0,
+    "fixture_http_requests": 47,
+    "per_case_request_counts": {
+      "test_abort_signal_closes_host_request": 1,
+      "test_committed_model_response_replayed_after_worker_kill": 3,
+      "test_corrupt_ipc_frames_fail_closed": 3,
+      "test_host_crash_after_response_commit_reuses_cache": 3,
+      "test_host_crash_inflight_blocks_two_restarts": 1,
+      "test_http_adapter_tools_and_generation_memos": 3,
+      "test_http_errors_do_not_retry_implicitly": 4,
+      "test_invalid_or_incomplete_responses_never_execute_tools": 9,
+      "test_missing_usage_is_preserved_as_unknown": 3,
+      "test_model_attempt_limit_survives_host_reopen": 4,
+      "test_multiple_frames_reassemble_utf8_response": 3,
+      "test_probe_cannot_be_enabled_through_production_inputs": 0,
+      "test_profile_and_content_changes_cannot_reuse_cached_request": 1,
+      "test_report_commit_replayed_once": 3,
+      "test_tool_names_parameters_and_order_stay_restricted": 6
+    }
+  },
+  "p1_regression": {
+    "passed": 20,
+    "failed": 0
+  },
+  "durable_regression": {
+    "passed": 59,
+    "failed": 0
+  },
+  "root_check": {
+    "exit_code": 0
+  },
+  "production_p1_files_unchanged": true,
+  "p1_engine_pin_digest": "2a4a2c1c6fd55af7301bb0ad7fda53b7e3ecdd5c7ea74cf040c0e78b3c5d7b05",
+  "limits": [
+    "Windows/Node 24.14.0/pi-durable 1.4.0/local fixture only",
+    "No real model inference or live profile",
+    "Not a production ModelBroker; TLS/DNS/proxy/fees/migrations pending",
+    "No remote exactly-once or zero-billing guarantee"
+  ],
+  "source_sha256": {
+    "integrations/atlas_bridge/host.py": "4c41b083a19cc0098e98a97c2cc188f6b8f295fd72cdf6f858fa46e4d8be14b0",
+    "integrations/atlas_bridge/model_probe.py": "a2f735ad0ea0a7db2fbfdd87374cf1002281a1156bcfef5154ca347669a158d0",
+    "integrations/atlas_bridge/windows.py": "6571748f6ed4fdeb676c4ff5571ed3d2156c3f2799def7ea6991aaa27dc4f8f9",
+    "integrations/lock_p2_probe.py": "ebeab71bf936c896b5a1370bd9f393a1a65994858367886913c61fc46b87da54",
+    "integrations/run_p2_probe.py": "2c6819581c9017c96215f42310a265d351d12f48d459cad63a6235b16cfa93f6",
+    "integrations/tests/fake_responses.py": "effc3106ae915450c140b8c4554edf9edb50fec2076b9ddb5588d9f43194f187",
+    "integrations/tests/p2_crash_host.py": "2f266defc24b5125d45ee673d4a1f440068317447f96ea13aad6d511909c223d",
+    "integrations/tests/test_p2_protocol.py": "d385e9fea2daf46cf86356469c56f8ce1b7b61f1faf3d5637fdeeed2075f7d67",
+    "packages/atlas-runtime/src/broker-transport.ts": "b63ee9c177c39888218aeb130d594a21f558c6a2877014166b98884c980b6968",
+    "packages/atlas-runtime/test/p2-probe-worker.ts": "cae7332175c39c0a443bf6a3c9e2c97417bcd79ed0c1e1fda9c03d0123d00357"
+  }
+}
