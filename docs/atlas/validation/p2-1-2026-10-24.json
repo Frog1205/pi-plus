@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-24T23:04:52.288442+00:00",
+  "stage": "P2.1 governed Host with fixture acceptance",
+  "p20_published_commit": "8241566d538b6b9aad3d3d32afc415b319c30300",
+  "p20_remote_main_verified": true,
+  "mode": "model_fixture",
+  "model_connected": false,
+  "real_provider_requests": 0,
+  "p21": {
+    "passed": 30,
+    "failed": 0,
+    "fixture_http_requests": 44,
+    "per_case_request_counts": {
+      "test_bad_sse_and_uncommitted_tools_never_complete": 6,
+      "test_batch_reservation_is_shared_and_persistent": 1,
+      "test_cancel_closes_connection_and_retains_unknown_budget": 1,
+      "test_concurrent_batch_reservations_do_not_overbook": 1,
+      "test_cumulative_input_and_fee_reservations_survive_reopen": 2,
+      "test_deadline_is_not_reset_by_restart": 0,
+      "test_host_kill_after_response_commit_reuses_cached_budget_and_response": 3,
+      "test_host_kill_inflight_blocks_two_restarts_and_new_generation": 1,
+      "test_http_failure_classification_has_no_retry": 4,
+      "test_input_size_limit_is_checked_before_reservation": 0,
+      "test_migration_backup_preserves_legacy_and_rolls_back_on_fault": 0,
+      "test_missing_usage_retains_full_reservation": 3,
+      "test_normal_governed_worker_and_frozen_provenance": 3,
+      "test_other_task_cancel_cannot_cancel_the_running_task": 1,
+      "test_prepared_can_resume_but_dispatching_never_resends": 0,
+      "test_prepared_identity_resumes_once_without_new_reservation": 1,
+      "test_production_api_cannot_enable_governed_mode": 0,
+      "test_profile_change_conflicts_and_does_not_reinterpret_history": 0,
+      "test_redirect_usage_overrun_and_delta_mismatch_fail_closed": 6,
+      "test_report_commit_worker_crash_publishes_once": 3,
+      "test_request_and_output_budgets_survive_restart": 2,
+      "test_response_commit_worker_crash_replays_without_new_charge": 3,
+      "test_response_deltas_cannot_disagree_with_committed_arguments": 0,
+      "test_sixteen_duplicate_submissions_are_one_task": 0,
+      "test_timeout_during_request_reclaims_worker_and_retains_budget": 1,
+      "test_tool_attempt_limit_cannot_reset_on_reopen": 1,
+      "test_tools_require_committed_model_call_and_authorized_receipt": 1,
+      "test_worker_cannot_forge_context_or_schema": 0
+    },
+    "network_policy_cases": 2,
+    "network_policy_uses_mock_sockets": true
+  },
+  "p20_regression": {
+    "passed": 15,
+    "failed": 0
+  },
+  "p1_regression": {
+    "passed": 20,
+    "failed": 0
+  },
+  "p0_and_upstream_regression": {
+    "passed": 109,
+    "failed": 0,
+    "groups": {
+      "coding": 23,
+      "durable": 59,
+      "coding-p0": 17,
+      "durable-p0": 10
+    }
+  },
+  "root_check": {
+    "exit_code": 0
+  },
+  "p1_and_p20_runtime_files_unchanged": true,
+  "p1_engine_pin_digest": "2a4a2c1c6fd55af7301bb0ad7fda53b7e3ecdd5c7ea74cf040c0e78b3c5d7b05",
+  "governance_pin_digest": "0d64b6091bc6a921ac384ef6aa63272297badab52ed39e7262fce7377a292e51",
+  "governance_pinned_files": 356,
+  "confidence": {
+    "engineering_percent": 90,
+    "scope": "fixed Windows/Node 24.14.0/Pi 1.4.0; fixture only; not statistical reliability"
+  },
+  "limitations": [
+    "No real model inference or live activation",
+    "Fixture currency and byte token bounds are not real provider pricing/tokenizer validation",
+    "HTTPS DNS/TLS primitives tested with mocks only; no real certificate/proxy acceptance",
+    "No remote exactly-once, cancellation or zero-billing guarantee",
+    "P2.1 changes remain local; only P2.0 was requested for publishing"
+  ],
+  "source_sha256": {
+    "integrations/atlas_bridge/governed_host.py": "5af2ef05d5c77cebbd604de5fc6e04bef056c2238157fc989debad7984a8404d",
+    "integrations/atlas_bridge/model_broker.py": "7a8be09d580cbbc1fb615365bdc2c7b06f80f74777473203fda13b7e64eeb909",
+    "integrations/atlas_bridge/model_ledger.py": "86752ab91f64f039eb7e6c62c89e19bc2c8dd5f1d6478debb65d66f896d10f8f",
+    "integrations/atlas_bridge/model_policy.py": "381539499077a8edf6221c7d41adfc3386de5115633599df859e87bc65459c86",
+    "integrations/lock_governance.py": "e35be530996647ba1a72d1cca4b43b7b11d9205fbd7d89432c7d476d093a947e",
+    "integrations/run_p21_checks.py": "8fdcb5da520c8687aaa3d78d73e78589b4ac6f990ac5a849bce55e73abb5d55c",
+    "integrations/tests/fake_responses.py": "effc3106ae915450c140b8c4554edf9edb50fec2076b9ddb5588d9f43194f187",
+    "integrations/tests/governed_responses.py": "c453ddbaf5415ae36a0f22b10d9cea2f9bc11f2e40c465feb35311e88bc362fd",
+    "integrations/tests/p21_crash_host.py": "aafcd166c450735aab7570b2145adfd999d52b0f1ad6879f40015f78eb030d12",
+    "integrations/tests/test_p2_governance.py": "453fbe6ee629fded311966fab357f49df35b1b7dd44ce69eda968dd8326f0b1a",
+    "packages/atlas-runtime/src/governed-worker.ts": "6ea65931fe62f9385a1d2986a366ff0be60782e3dde402aca7a63cb74c4ecfbe"
+  }
+}
