@@ -7,6 +7,7 @@
 - Controlled offline Atlas Worker with an explicit two-tool registry, host receipts, and a reviewed pi-durable source pin.
 - Fixture-only P2.0 HTTP adapter transport probe with framed IPC, durable request identity, cancellation, response replay, and process-crash tests.
 - Governed P2.1 fixture Host with immutable task profiles, reconstructed model context, transactional request reservations, shared batch budgets, migration backups, and conservative unknown-outcome recovery.
+- Explicit DeepSeek/MiniMax Messages bridge with synthetic-input grants, pinned public DNS/TLS, atomic provider receipts, bounded live acceptance, and operator-only reconciliation.
 
 ### Fixed
 

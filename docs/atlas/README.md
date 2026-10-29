@@ -1,6 +1,6 @@
 # Atlas Brain / Pi Plus
 
-当前交付为 P1：Windows 本机单项目受控执行，模式 `controlled_offline`，**无真实模型推理**。只开放读取授权文档快照、向 SQLite 发布任务报告两种工具。源码基线及运行版本由 `packages/atlas-runtime/engine-lock.json` 固定；不随 Git HEAD 自动升级。
+默认工作台/API 入口保持 P1：Windows 本机单项目受控执行，模式 `controlled_offline`，该入口**无真实模型推理**。只开放读取授权文档快照、向 SQLite 发布任务报告两种工具。P2.2 另有显式供应商验收入口，DeepSeek 与 MiniMax 中国站均已完成真实合成任务，当前受控范围通过；P2.3 五任务和真实项目资料接入尚未验收。源码基线及运行版本分别固定，不随 Git HEAD 自动升级。
 
 ## 文档
 
@@ -8,9 +8,11 @@
 - [P0 权限、恢复与重复执行实测](p0-foundation-validation-2026-10-24.md)。
 - [P1 实现、验收与启动](p1-controlled-runtime-2026-10-24.md)。
 - [P1 仓库交付验收摘要](validation/p1-2026-10-24.json)。
-- [P2 真实模型接入规划与验收标准](p2-real-model-plan.md)：保持 P1 权限边界；P2.0/P2.1 已通过假供应商验收，真实模型接入尚未验收。
+- [P2 真实模型接入规划与验收标准](p2-real-model-plan.md)：保持 P1 权限边界；完整 P2.3 真实项目验收尚未完成。
 - [P2.0 假供应商协议与故障验证](p2-0-protocol-validation-2026-10-24.md)：独立 model_fixture 入口，无真实推理；不改变 P1 正式入口。
 - [P2.1 宿主治理与假供应商验收](p2-1-governance-validation-2026-10-24.md)：任务来源、请求重建、账本迁移与预算治理，live 入口仍关闭。
+- [P2.2 两家供应商故障矩阵与对账](p2-2-provider-validation-2026-10-26.md)：33 项协议/故障、4 项 CLI 对账通过；真实验收与夹具分别标记。
+- [P2.2 MiniMax 中国站真实验收补齐（2026-10-29）](p2-2-minimax-cn-validation-2026-10-29.md)：新增真实任务通过、三条完整回执、重复提交/重开无新增请求；两家累计费用与范围限制见报告。
 
 ## 独立运行 P1 测试
 

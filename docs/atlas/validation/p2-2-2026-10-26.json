@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-27T04:03:54.024726+00:00",
+  "stage": "P2.2 fault matrix, local reconciliation and explicit provider acceptance",
+  "status": "partial_awaiting_minimax_region",
+  "p21_published_commit": "48a23af9d3458d5468297b7debc505ff58196eda",
+  "p21_remote_verified": true,
+  "tests": {
+    "provider_fault_matrix": {
+      "passed": 33,
+      "failed": 0,
+      "fixture_http_requests": 86,
+      "counts": {
+        "deepseek": {
+          "test_cancel_closes_provider_connection_without_releasing_unknown_cost": 1,
+          "test_fault_matrix_never_executes_unvalidated_tools": 14,
+          "test_host_crash_after_commit_does_not_repeat_model": 3,
+          "test_host_crash_inflight_stays_unknown_without_second_send": 1,
+          "test_http_matrix_no_redirect_or_retry": 6,
+          "test_manual_reconciliation_recovers_without_resending": 3,
+          "test_missing_usage_does_not_become_zero_cost": 3,
+          "test_normal_actual_pi_adapter_with_provider_protocol": 3,
+          "test_reconciliation_rejects_mismatched_identity_and_content": 1,
+          "test_reconciliation_transaction_failure_preserves_unknown_reservation": 1,
+          "test_report_commit_crash_publishes_only_once": 3,
+          "test_response_commit_crash_reuses_provider_receipt": 3,
+          "test_unapproved_source_and_request_overrides_never_dispatch": 0,
+          "test_unknown_stays_blocked_across_two_restarts": 1
+        },
+        "minimax-cn": {
+          "test_cancel_closes_provider_connection_without_releasing_unknown_cost": 1,
+          "test_fault_matrix_never_executes_unvalidated_tools": 14,
+          "test_host_crash_after_commit_does_not_repeat_model": 3,
+          "test_host_crash_inflight_stays_unknown_without_second_send": 1,
+          "test_http_matrix_no_redirect_or_retry": 6,
+          "test_manual_reconciliation_recovers_without_resending": 3,
+          "test_missing_usage_does_not_become_zero_cost": 3,
+          "test_normal_actual_pi_adapter_with_provider_protocol": 3,
+          "test_reconciliation_rejects_mismatched_identity_and_content": 1,
+          "test_reconciliation_transaction_failure_preserves_unknown_reservation": 1,
+          "test_report_commit_crash_publishes_only_once": 3,
+          "test_response_commit_crash_reuses_provider_receipt": 3,
+          "test_unapproved_source_and_request_overrides_never_dispatch": 0,
+          "test_unknown_stays_blocked_across_two_restarts": 1
+        }
+      }
+    },
+    "operator_cli": {
+      "passed": 4,
+      "failed": 0
+    },
+    "p21_publication": {
+      "passed": 31,
+      "failed": 0
+    },
+    "p20": {
+      "passed": 15,
+      "failed": 0
+    },
+    "p1": {
+      "passed": 20,
+      "failed": 0
+    },
+    "p0_upstream": {
+      "passed": 109,
+      "failed": 0,
+      "groups": {
+        "coding": 23,
+        "durable": 59,
+        "coding-p0": 17,
+        "durable-p0": 10
+      }
+    },
+    "root_check": {
+      "exit_code": 0
+    }
+  },
+  "live": {
+    "deepseek": {
+      "tasks_passed": 2,
+      "confirmed_model_responses": 6,
+      "current": {
+        "time": "2026-10-27T04:01:08.790864+00:00",
+        "provider": "deepseek",
+        "requested_model": "deepseek-flash",
+        "mode": "model_live",
+        "model_connected": true,
+        "state": "completed",
+        "error": null,
+        "acceptance_passed": true,
+        "source_sha256": "9894a42243bada062703e0539c54f64e65827399de6e5e2dc23505fc3e2828f1",
+        "report_sha256": "4a0eb0ac6812802a6eb0176681aa8a21f99dcadf2b00f4ed5b616efaaf003f4a",
+        "model_budget": {
+          "requests": 3,
+          "dispatches": 3,
+          "held_cost": 7638000,
+          "currency": "CNY_NANO_UPPER_ESTIMATE",
+          "usage_available": true,
+          "requires_reconciliation": false,
+          "unknown_usage": 0
+        },
+        "dispatch_attempts": 3,
+        "confirmed_http_sent": 3,
+        "complete_provider_responses": 3,
+        "fee_cny_upper_estimate": 0.007638,
+        "bill_verified": false,
+        "task_id": "14c980f5-4582-4f2e-ae0f-3acd2350ed83",
+        "request_id": "p22-live-2",
+        "profile_hash": "99cc4d58e97fb9e17fcab50b6583af0cfb86c1051f9abaffe604aeef168f9054",
+        "runtime_pin": "d1a42c72ed6a626578be6a8120a10f8ddded15368488d09989f06313f46b88b0",
+        "no_extra_dispatch_on_duplicate": true,
+        "limitations": [
+          "Local upper-rate estimate, not a provider bill",
+          "No remote exactly-once or cancellation guarantee"
+        ],
+        "reopen_preserves_ledger": true
+      },
+      "prior_runtime_task": {
+        "time": "2026-10-27T03:50:01.448007+00:00",
+        "provider": "deepseek",
+        "requested_model": "deepseek-flash",
+        "mode": "model_live",
+        "model_connected": true,
+        "state": "completed",
+        "error": null,
+        "acceptance_passed": true,
+        "source_sha256": "9894a42243bada062703e0539c54f64e65827399de6e5e2dc23505fc3e2828f1",
+        "report_sha256": "6fd015ac071939e3f64122c3909e5697fdcb5b762084c042b8227194acb056f2",
+        "model_budget": {
+          "requests": 3,
+          "dispatches": 3,
+          "held_cost": 7650000,
+          "currency": "CNY_NANO_UPPER_ESTIMATE",
+          "usage_available": true,
+          "requires_reconciliation": false,
+          "unknown_usage": 0
+        },
+        "dispatch_attempts": 3,
+        "confirmed_http_sent": 3,
+        "complete_provider_responses": 3,
+        "fee_cny_upper_estimate": 0.00765,
+        "bill_verified": false,
+        "task_id": "8f2ca0ff-7e93-4d30-a48f-d02e544eefdc",
+        "request_id": "p22-live-1",
+        "profile_hash": "99cc4d58e97fb9e17fcab50b6583af0cfb86c1051f9abaffe604aeef168f9054",
+        "runtime_pin": "a1199d1b2b7333d89b62de1ccef4f8f22d4a68cbec8de241bf68fa1140928f09",
+        "no_extra_dispatch_on_duplicate": true,
+        "limitations": [
+          "Local upper-rate estimate, not a provider bill",
+          "No remote exactly-once or cancellation guarantee"
+        ],
+        "reopen_preserves_ledger": true
+      },
+      "cumulative_fee_cny_upper_estimate": 0.015288,
+      "bill_verified": false,
+      "observed_response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "minimax": {
+      "state": "not_started",
+      "reason": "awaiting account region: minimax-cn or minimax-io",
+      "real_provider_requests": 0
+    }
+  },
+  "grants": {
+    "input": "shipped synthetic README only",
+    "source_sha256": "9894a42243bada062703e0539c54f64e65827399de6e5e2dc23505fc3e2828f1",
+    "combined_cap_cny": 10,
+    "provider_cap_cny": 5,
+    "credential_refs": [
+      "DEEPSEEK_API_KEY",
+      "MINIMAX_API_KEY"
+    ]
+  },
+  "boundaries": {
+    "default_api": "controlled_offline",
+    "p1_p20_p21_runtime_files_unchanged": true,
+    "tools": [
+      "read_document",
+      "publish_report"
+    ],
+    "pinned_files": 366,
+    "runtime_pin": "d1a42c72ed6a626578be6a8120a10f8ddded15368488d09989f06313f46b88b0"
+  },
+  "confidence": {
+    "fixture_and_local_reconciliation_percent": 90,
+    "deepseek_controlled_integration_percent": 85,
+    "minimax_live": "pending"
+  },
+  "limitations": [
+    "Fees are frozen-upper-rate estimates, not provider bills",
+    "No remote exactly-once or cancellation guarantee",
+    "Provider wire protocol is complete Messages JSON; vendor SSE is not accepted by this stage",
+    "One P1 oversized HTTP case hit WinError 10053, server logged 413; unmodified revalidation passed 20/20; retained as observation",
+    "P2.2 is local and uncommitted; only P2.1 was requested for publishing"
+  ],
+  "source_sha256": {
+    "integrations/atlas_bridge/provider_broker.py": "346d8645250e91fb6bf4222b7ec4692800ea85da2a40bc759510b627e4493cc3",
+    "integrations/atlas_bridge/provider_host.py": "17608065ccb225af24047c9dd8360ef2879f7b42e9487c9b4443b36c2e38004a",
+    "integrations/atlas_bridge/provider_ledger.py": "f40eb6f1fb8c44d7f7f57e3957d93ea7d0ecdb3fc655cf6b31099bd183807f8f",
+    "integrations/atlas_bridge/provider_policy.py": "f104c7663ec33f2d9405f41691a922568dcd9cb4c3b55cb7f432bad934280d88",
+    "integrations/atlas_bridge/provider_protocol.py": "ed26e2db0da0a30a788f69e841d7b5f3e1ac30aceb2945e2ac71c5c17b5a5d89",
+    "integrations/fixtures/p22-project/README.md": "9894a42243bada062703e0539c54f64e65827399de6e5e2dc23505fc3e2828f1",
+    "integrations/lock_provider.py": "5e12df08bb8f1a9d48106ce1dea183dc0044a5f68efe0d0b35f254d04132f567",
+    "integrations/reconcile_provider.py": "c3e86285f5b02349c2edb631082bc186a8d479172c26db24e34041ef54d0f93c",
+    "integrations/run_p22_checks.py": "0999c5cfbdb9edb76a210b3a11385cf45270e1f4489f6040f2d404a501e7d77e",
+    "integrations/run_p22_live.py": "b3b4a8bb6adf8924ea0abdb2be65b2f456ab259d008b064813969d39143cd1e5",
+    "integrations/tests/p22_crash_host.py": "d2e1952a5175174d5e75af164a5124a310c82d8d24489a6b8857b51ce03f9862",
+    "integrations/tests/provider_server.py": "8cbdb71b66db9d25d734c8d817d5bd06f0190bbf7cf2b0524178a0ae349a57c1",
+    "integrations/tests/test_p22_operator.py": "775c391c7c6d0ab1b1f72ead39bf4cca4abe349c071ab772e954fb16fe8aec50",
+    "integrations/tests/test_p22_providers.py": "4b49df55b7227ca169884370e06a328e93438f354f9684f33b4c0ca9f163eb83",
+    "packages/atlas-runtime/src/provider-transport.ts": "e02bf9b824fdf0388a0a37bd913ec4bacb95803f038c371c984cfac8d5411cc9",
+    "packages/atlas-runtime/src/provider-worker.ts": "a48c11daa08c286bb5d83bdc92a953d6720668d2db4843495f055beccbc0c7e0"
+  }
+}
