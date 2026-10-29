@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "client_date": "2026-10-29",
+  "verified_at": "2026-10-29T18:15:32.861538+00:00",
+  "stage": "P2.3 five new controlled live synthetic tasks",
+  "status": "passed_for_synthetic_controlled_scope",
+  "published_p22_commit": "705284bb2515621eac59abe9a962e18053ca8e5e",
+  "p22_remote_verified": true,
+  "runtime_pin": "d1a42c72ed6a626578be6a8120a10f8ddded15368488d09989f06313f46b88b0",
+  "pinned_files": 366,
+  "runtime_code_changed": false,
+  "input_scope": "Same shipped synthetic README and pinned goal; separate fixed fixture copy for each provider",
+  "scope_excludes": [
+    "Actual Atlas private files",
+    "Default API live integration",
+    "Vendor SSE",
+    "Production reliability",
+    "Remote bill verification"
+  ],
+  "task_distribution": {
+    "deepseek": 3,
+    "minimax-cn": 2
+  },
+  "tasks_planned": 5,
+  "tasks_passed": 5,
+  "model_responses": 15,
+  "manual_facts_sources_and_suggestions_reviewed": true,
+  "extra_dispatches_on_duplicate_or_reopen": 0,
+  "unknown_outcomes": 0,
+  "missing_usage": 0,
+  "project_source_files_unchanged": true,
+  "cases": [
+    {
+      "time": "2026-10-29T18:11:06.728483+00:00",
+      "provider": "deepseek",
+      "requested_model": "deepseek-flash",
+      "mode": "model_live",
+      "model_connected": true,
+      "state": "completed",
+      "error": null,
+      "acceptance_passed": true,
+      "source_sha256": "9894a42243bada062703e0539c54f64e65827399de6e5e2dc23505fc3e2828f1",
+      "report_sha256": "bdae7f79da79c11be4583dccf5ece495c2f982269a504ce77cceb108800eafc0",
+      "model_budget": {
+        "requests": 3,
+        "dispatches": 3,
+        "held_cost": 8740000,
+        "currency": "CNY_NANO_UPPER_ESTIMATE",
+        "usage_available": true,
+        "requires_reconciliation": false,
+        "unknown_usage": 0
+      },
+      "dispatch_attempts": 3,
+      "confirmed_http_sent": 3,
+      "complete_provider_responses": 3,
+      "fee_cny_upper_estimate": 0.00874,
+      "bill_verified": false,
+      "task_id": "818b45f4-d98c-4142-94f8-6f70be747865",
+      "request_id": "p23-2026-10-29-ds-01",
+      "profile_hash": "99cc4d58e97fb9e17fcab50b6583af0cfb86c1051f9abaffe604aeef168f9054",
+      "runtime_pin": "d1a42c72ed6a626578be6a8120a10f8ddded15368488d09989f06313f46b88b0",
+      "no_extra_dispatch_on_duplicate": true,
+      "limitations": [
+        "Local upper-rate estimate, not a provider bill",
+        "No remote exactly-once or cancellation guarantee"
+      ],
+      "reopen_preserves_ledger": true
+    },
+    {
+      "time": "2026-10-29T18:11:51.775001+00:00",
+      "provider": "minimax-cn",
+      "requested_model": "MiniMax-M3",
+      "mode": "model_live",
+      "model_connected": true,
+      "state": "completed",
+      "error": null,
+      "acceptance_passed": true,
+      "source_sha256": "9894a42243bada062703e0539c54f64e65827399de6e5e2dc23505fc3e2828f1",
+      "report_sha256": "029d7a646e2a5e6e30fcc04badeaf270bbb6832ef589e1208ef2a7eba5e515bc",
+      "model_budget": {
+        "requests": 3,
+        "dispatches": 3,
+        "held_cost": 19433400,
+        "currency": "CNY_NANO_UPPER_ESTIMATE",
+        "usage_available": true,
+        "requires_reconciliation": false,
+        "unknown_usage": 0
+      },
+      "dispatch_attempts": 3,
+      "confirmed_http_sent": 3,
+      "complete_provider_responses": 3,
+      "fee_cny_upper_estimate": 0.0194334,
+      "bill_verified": false,
+      "task_id": "615e1b51-3065-499e-906a-c3c9226d4ced",
+      "request_id": "p23-2026-10-29-mm-01",
+      "profile_hash": "2472fc02780bb9b72364b504048e979f02e70ab6b6f7a9828c2ebc15b87e3862",
+      "runtime_pin": "d1a42c72ed6a626578be6a8120a10f8ddded15368488d09989f06313f46b88b0",
+      "no_extra_dispatch_on_duplicate": true,
+      "limitations": [
+        "Local upper-rate estimate, not a provider bill",
+        "No remote exactly-once or cancellation guarantee"
+      ],
+      "reopen_preserves_ledger": true
+    },
+    {
+      "time": "2026-10-29T18:12:26.559750+00:00",
+      "provider": "deepseek",
+      "requested_model": "deepseek-flash",
+      "mode": "model_live",
+      "model_connected": true,
+      "state": "completed",
+      "error": null,
+      "acceptance_passed": true,
+      "source_sha256": "9894a42243bada062703e0539c54f64e65827399de6e5e2dc23505fc3e2828f1",
+      "report_sha256": "ce39282bddae9e0287e93a906d61fb517b2be0eeacb9e808d213247f321c2091",
+      "model_budget": {
+        "requests": 3,
+        "dispatches": 3,
+        "held_cost": 7996000,
+        "currency": "CNY_NANO_UPPER_ESTIMATE",
+        "usage_available": true,
+        "requires_reconciliation": false,
+        "unknown_usage": 0
+      },
+      "dispatch_attempts": 3,
+      "confirmed_http_sent": 3,
+      "complete_provider_responses": 3,
+      "fee_cny_upper_estimate": 0.007996,
+      "bill_verified": false,
+      "task_id": "5452e1c2-822f-4490-b9f2-085dde3fd1d5",
+      "request_id": "p23-2026-10-29-ds-02",
+      "profile_hash": "99cc4d58e97fb9e17fcab50b6583af0cfb86c1051f9abaffe604aeef168f9054",
+      "runtime_pin": "d1a42c72ed6a626578be6a8120a10f8ddded15368488d09989f06313f46b88b0",
+      "no_extra_dispatch_on_duplicate": true,
+      "limitations": [
+        "Local upper-rate estimate, not a provider bill",
+        "No remote exactly-once or cancellation guarantee"
+      ],
+      "reopen_preserves_ledger": true
+    },
+    {
+      "time": "2026-10-29T18:13:39.276890+00:00",
+      "provider": "minimax-cn",
+      "requested_model": "MiniMax-M3",
+      "mode": "model_live",
+      "model_connected": true,
+      "state": "completed",
+      "error": null,
+      "acceptance_passed": true,
+      "source_sha256": "9894a42243bada062703e0539c54f64e65827399de6e5e2dc23505fc3e2828f1",
+      "report_sha256": "e0183494f1b9c320cdbf6315dbc8938f156ce898ac1383efdf2f789d420d9e5d",
+      "model_budget": {
+        "requests": 3,
+        "dispatches": 3,
+        "held_cost": 19966800,
+        "currency": "CNY_NANO_UPPER_ESTIMATE",
+        "usage_available": true,
+        "requires_reconciliation": false,
+        "unknown_usage": 0
+      },
+      "dispatch_attempts": 3,
+      "confirmed_http_sent": 3,
+      "complete_provider_responses": 3,
+      "fee_cny_upper_estimate": 0.0199668,
+      "bill_verified": false,
+      "task_id": "50034f04-b200-4df6-b57f-7da9cbf52fd1",
+      "request_id": "p23-2026-10-29-mm-02",
+      "profile_hash": "2472fc02780bb9b72364b504048e979f02e70ab6b6f7a9828c2ebc15b87e3862",
+      "runtime_pin": "d1a42c72ed6a626578be6a8120a10f8ddded15368488d09989f06313f46b88b0",
+      "no_extra_dispatch_on_duplicate": true,
+      "limitations": [
+        "Local upper-rate estimate, not a provider bill",
+        "No remote exactly-once or cancellation guarantee"
+      ],
+      "reopen_preserves_ledger": true
+    },
+    {
+      "time": "2026-10-29T18:14:34.802214+00:00",
+      "provider": "deepseek",
+      "requested_model": "deepseek-flash",
+      "mode": "model_live",
+      "model_connected": true,
+      "state": "completed",
+      "error": null,
+      "acceptance_passed": true,
+      "source_sha256": "9894a42243bada062703e0539c54f64e65827399de6e5e2dc23505fc3e2828f1",
+      "report_sha256": "765f863a7e06e7eb8b1774f87d843ac203139e4c3f36287f6480c78e5027b5f7",
+      "model_budget": {
+        "requests": 3,
+        "dispatches": 3,
+        "held_cost": 8140000,
+        "currency": "CNY_NANO_UPPER_ESTIMATE",
+        "usage_available": true,
+        "requires_reconciliation": false,
+        "unknown_usage": 0
+      },
+      "dispatch_attempts": 3,
+      "confirmed_http_sent": 3,
+      "complete_provider_responses": 3,
+      "fee_cny_upper_estimate": 0.00814,
+      "bill_verified": false,
+      "task_id": "52355592-7ddc-4c33-a984-f7cc7dfdd5ce",
+      "request_id": "p23-2026-10-29-ds-03",
+      "profile_hash": "99cc4d58e97fb9e17fcab50b6583af0cfb86c1051f9abaffe604aeef168f9054",
+      "runtime_pin": "d1a42c72ed6a626578be6a8120a10f8ddded15368488d09989f06313f46b88b0",
+      "no_extra_dispatch_on_duplicate": true,
+      "limitations": [
+        "Local upper-rate estimate, not a provider bill",
+        "No remote exactly-once or cancellation guarantee"
+      ],
+      "reopen_preserves_ledger": true
+    }
+  ],
+  "reopen_checks": {
+    "p23-2026-10-29-ds-01": {
+      "all_records_sha256": "4bb437098b897a679d2003bb9bc456891a723378c3967bd8dedcf1beeebe16e2",
+      "events": 21,
+      "completed_operations": 2,
+      "reopened_records_identical": true,
+      "duplicate_after_reopen_same_task": true,
+      "conflicting_goal_rejected": true,
+      "extra_dispatches": 0
+    },
+    "p23-2026-10-29-ds-02": {
+      "all_records_sha256": "91f6753a5ea504de25f15b3decda813a481fb1f444f323bc296422387ed32532",
+      "events": 21,
+      "completed_operations": 2,
+      "reopened_records_identical": true,
+      "duplicate_after_reopen_same_task": true,
+      "conflicting_goal_rejected": true,
+      "extra_dispatches": 0
+    },
+    "p23-2026-10-29-ds-03": {
+      "all_records_sha256": "a2ba7f4926a75d27ee2395330a6b27d0aa07d58d936ee2ffb9459892d63a96ea",
+      "events": 21,
+      "completed_operations": 2,
+      "reopened_records_identical": true,
+      "duplicate_after_reopen_same_task": true,
+      "conflicting_goal_rejected": true,
+      "extra_dispatches": 0
+    },
+    "p23-2026-10-29-mm-01": {
+      "all_records_sha256": "c03b7a450a9516d51853d4499294f0e7e82805fd16d543870c5d12f5182f0f63",
+      "events": 21,
+      "completed_operations": 2,
+      "reopened_records_identical": true,
+      "duplicate_after_reopen_same_task": true,
+      "conflicting_goal_rejected": true,
+      "extra_dispatches": 0
+    },
+    "p23-2026-10-29-mm-02": {
+      "all_records_sha256": "91a592cc6b96b1c1961cbb30d569a5080a1d4dfd4a3c5ae8998b390a2ef53af9",
+      "events": 21,
+      "completed_operations": 2,
+      "reopened_records_identical": true,
+      "duplicate_after_reopen_same_task": true,
+      "conflicting_goal_rejected": true,
+      "extra_dispatches": 0
+    }
+  },
+  "costs": {
+    "deepseek": {
+      "p23_new_tasks": 3,
+      "p23_model_responses": 9,
+      "p23_fee_cny_upper_estimate": 0.024876,
+      "cumulative_fee_cny_upper_estimate": 0.040164,
+      "provider_cap_cny": 5,
+      "bill_verified": false
+    },
+    "minimax-cn": {
+      "p23_new_tasks": 2,
+      "p23_model_responses": 6,
+      "p23_fee_cny_upper_estimate": 0.0394002,
+      "cumulative_fee_cny_upper_estimate": 0.0578676,
+      "provider_cap_cny": 5,
+      "bill_verified": false
+    }
+  },
+  "p23_fee_cny_upper_estimate": 0.0642762,
+  "cumulative_fee_cny_upper_estimate": 0.0980316,
+  "combined_cap_cny": 10,
+  "bill_verified": false,
+  "root_check": {
+    "executed_on": "2026-10-29",
+    "exit_code": 0,
+    "evidence": ".artifacts/atlas-p0/run-M1WOOu/summary.json"
+  },
+  "historical_regressions": {
+    "source_sha256_revalidated": true,
+    "rerun_this_stage": false,
+    "p22_fault_matrix": 33,
+    "operator_cli": 4,
+    "p21": 31,
+    "p20": 15,
+    "p1": 20,
+    "p0_upstream": 109
+  },
+  "confidence": {
+    "controlled_scope_engineering_percent": 90,
+    "long_term_reliability": "not established"
+  },
+  "limitations": [
+    "Five repetitions of one synthetic task are functional evidence, not a reliability estimate",
+    "Prior fault matrix is fixture-based; no paid requests were forcibly interrupted in P2.3",
+    "Costs use frozen upper rates and usage; provider bills were not verified",
+    "P2.3 docs/evidence remain local; the requested P2.2 source and tests are published"
+  ]
+}
